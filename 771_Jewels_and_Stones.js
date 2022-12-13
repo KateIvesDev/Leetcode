@@ -16,14 +16,14 @@ Constraints:
 
 1 <= jewels.length, stones.length <= 50
 jewels and stones consist of only English letters.
-All the characters of jewels are unique.*/
+All the characters of jewels are unique.
 
 PREP
 parameters: two strings of Englsh letters; the jewel string only has unique characters; letters are case sensitive
 return: return a number; the number is the count of your stones that are jewels
 example: a jewel string of "aZ" and a stone string of "aaZZ" will return 4
 pseduo: simple solution is using nested for loops to count number of times a jewel character appears in the stones string; 
-but this is an O(n^2) solution so not optimal.
+but this is an O(n^2) solution so not optimal.*//*
 
 //O(n^2) SOLUTION
 function howManyJewels(jewels, stones){
@@ -55,3 +55,4 @@ function howManyJewels(J, S){
     }
     return result
 }
+howManyJewels()
