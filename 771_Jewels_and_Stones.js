@@ -55,4 +55,4 @@ function howManyJewels(J, S){
     }
     return result
 }
-howManyJewels()
+console.log(howManyJewels("zAB", "zzBB"))
