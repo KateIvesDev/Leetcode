@@ -1,0 +1,22 @@
+/*You are given a string s and an integer array indices of the same length. The string s will be shuffled such that the character at the ith position moves to indices[i] in the shuffled string.
+
+Return the shuffled string.
+
+PREP
+Parameter: The parameters are a string and an array of integer indices; the string and array have the same length
+Return: Return a string shuffled into the correct order; the return string should move the character at the ith position to the indices[i] of the shuffled string.
+Example: "codeleet", indices = [4,5,6,7,0,2,1,3] should return "leetcode"
+Pseudo: originally tried to complete this by mapping the indices array to the string but that didn't work because the indices array is not in order; so had to figure out another way to reorganize the array; create an empty return array, use a forEach method to assign the correct position/index in the return array to the string character; then joined the array to return it as a string;
+*/
+
+function restoreString(s, indices) {
+    let result = []
+ 
+    indices.forEach((item, index) => {
+        result[item] = s[index]
+    })
+
+    return result.join("")
+}
+
+console.log(restoreString('codeleet', [4,5,6,7,0,2,1,3]))
